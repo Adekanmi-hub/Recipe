@@ -6,7 +6,6 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-  filter,
 } from "@chakra-ui/react";
 import React from "react";
 import Breakfast from "./utils/Breakfast";
@@ -16,7 +15,7 @@ import Dessert from "./utils/Dessert";
 import Snacks from "./utils/Snacks";
 import Drink from "./utils/Drink";
 
-const CategoryTab = ({}) => {
+const CategoryTab = () => {
   return (
     <Flex w="100%" bgColor="#5B2E1A" minH="900px">
       <Flex pt="20px" px={{ "2xl": "200px", xl: "20px" }} w="100%">

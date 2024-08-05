@@ -1,11 +1,9 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
-  Box,
   Button,
-  Flex,
   FormControl,
   FormLabel,
-  Image,
   Input,
   Modal,
   ModalBody,
@@ -14,9 +12,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Text,
   VStack,
-  useDisclosure,
   useToast,
 } from "@chakra-ui/react";
 
@@ -117,6 +113,19 @@ export const EditModal = ({ isOpen, onClose, initialValues, onSave }) => {
       </ModalContent>
     </Modal>
   );
+};
+
+EditModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  initialValues: PropTypes.shape({
+    recipeName: PropTypes.string,
+    nationality: PropTypes.string,
+    cookingTime: PropTypes.string,
+    ingredients: PropTypes.string,
+    fullName: PropTypes.string,
+  }).isRequired,
+  onSave: PropTypes.func.isRequired,
 };
 
 export default EditModal;
