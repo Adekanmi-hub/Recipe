@@ -50,8 +50,6 @@ const Navbar = () => {
           fontSize="18px"
           fontFamily="Merienda, cursive"
           fontWeight={500}
-          as={"a"}
-          href="/AboutUs"
         >
           About Us
         </Text>
@@ -61,8 +59,6 @@ const Navbar = () => {
           fontSize="18px"
           fontFamily="Merienda, cursive"
           fontWeight={500}
-          as={"a"}
-          href="/contactUs"
         >
           contact Us
         </Text>
