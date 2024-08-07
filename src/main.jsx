@@ -7,10 +7,10 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from "react-router-dom";
-import { ChakraProvider } from "@chakra-ui/react";
 import Landing from "./pages/Landing";
 import Recipe from "./pages/Recipe";
 import Categories from "./pages/Categories";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
