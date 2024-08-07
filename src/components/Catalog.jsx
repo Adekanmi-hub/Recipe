@@ -1,7 +1,7 @@
 import { Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-const Catalog = () => {
+export const Catalog = () => {
   return (
     <Flex
       w="100%"

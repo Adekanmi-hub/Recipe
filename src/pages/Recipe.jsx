@@ -103,12 +103,13 @@ export const Recipe = () => {
         >
           Create your recipe
         </Text>
-        <FormLabel fontSize="18px" color="white">
+        <FormLabel htmlFor="fullName" fontSize="18px" color="white">
           Full Name
         </FormLabel>
         <Input
           type="text"
           name="fullName"
+          id="fullName"
           border="2px solid white"
           placeholder="Enter Full Name "
           isRequired
@@ -116,12 +117,13 @@ export const Recipe = () => {
           value={formData.fullName}
           onChange={handleInputChange}
         />
-        <FormLabel pt={4} fontSize="18px" color="white">
+        <FormLabel htmlFor="recipeName" pt={4} fontSize="18px" color="white">
           Recipe Name
         </FormLabel>
         <Input
           type="text"
           name="recipeName"
+          id="recipeName"
           border="2px solid white"
           placeholder="Enter Recipe Name"
           isRequired
@@ -129,7 +131,7 @@ export const Recipe = () => {
           value={formData.recipeName}
           onChange={handleInputChange}
         />
-        <FormLabel fontSize="18px" color="white" pt={4}>
+        <FormLabel htmlFor="pcSelector" fontSize="18px" color="white" pt={4}>
           Food Type
         </FormLabel>
         <Select
@@ -150,12 +152,13 @@ export const Recipe = () => {
             </option>
           ))}
         </Select>
-        <FormLabel fontSize="18px" color="white" pt={4}>
+        <FormLabel htmlFor="nationality" fontSize="18px" color="white" pt={4}>
           Nationality
         </FormLabel>
         <Input
           type="text"
           name="nationality"
+          id="nationality"
           border="2px solid white"
           placeholder="Enter Nationality"
           isRequired
@@ -164,12 +167,13 @@ export const Recipe = () => {
           onChange={handleInputChange}
         />
 
-        <FormLabel fontSize="18px" color="white" pt={4}>
+        <FormLabel htmlFor="cookingTime" fontSize="18px" color="white" pt={4}>
           Cooking Time
         </FormLabel>
         <Input
           type="text"
           name="cookingTime"
+          id="cookingTime"
           border="2px solid white"
           isRequired
           color="white"
@@ -177,12 +181,12 @@ export const Recipe = () => {
           value={formData.cookingTime}
           onChange={handleInputChange}
         />
-
-        <FormLabel fontSize="18px" color="white" pt={4}>
+        <FormLabel htmlFor="ingredients" fontSize="18px" color="white" pt={4}>
           Ingredient
         </FormLabel>
         <Textarea
           name="ingredients"
+          id="ingredients"
           border="2px solid white"
           isRequired
           color="white"

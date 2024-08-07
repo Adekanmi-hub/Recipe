@@ -5,7 +5,7 @@ import Create from "../components/Create";
 import Catalog from "../components/Catalog";
 import Footer from "../components/Footer";
 
-const Landing = () => {
+export const Landing = () => {
   return (
     <Box>
       <Header />

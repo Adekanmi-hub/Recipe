@@ -8,14 +8,14 @@ import {
   Tabs,
 } from "@chakra-ui/react";
 import React from "react";
-import Breakfast from "./utils/Breakfast";
-import Lunch from "./utils/Lunch";
-import Dinner from "./utils/Dinner";
-import Dessert from "./utils/Dessert";
-import Snacks from "./utils/Snacks";
-import Drink from "./utils/Drink";
+import Breakfast from "./utils/Breakfast.jsx";
+import Lunch from "./utils/Lunch.jsx";
+import Dinner from "./utils/Dinner.jsx";
+import Dessert from "./utils/Dessert.jsx";
+import Snacks from "./utils/Snacks.jsx";
+import Drink from "./utils/Drink.jsx";
 
-const CategoryTab = () => {
+export const CategoryTab = () => {
   return (
     <Flex w="100%" bgColor="#5B2E1A" minH="900px">
       <Flex pt="20px" px={{ "2xl": "200px", xl: "20px" }} w="100%">

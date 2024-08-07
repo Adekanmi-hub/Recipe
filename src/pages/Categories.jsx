@@ -6,33 +6,10 @@ import {
   InputLeftElement,
   Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
 import CategoryTab from "../components/CategoryTab";
 import { IoSearchOutline } from "react-icons/io5";
 
-const recipeData = [
-  {
-    recipeName: "",
-    foodType: "",
-    nationality: "",
-    cookingTime: "",
-    ingredient: "",
-    fullName: "",
-  },
-];
 export const Categories = () => {
-  const [searchItem, setSearchItem] = useState("");
-  const [filteredArray, setFilteredArray] = useState(recipeData);
-
-  const handleInputChange = (e) => {
-    const searchTerm = e.target.value;
-    setSearchItem(searchTerm);
-    const filteredItems = recipeData.filter((user) =>
-      user.recipeName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    setFilteredArray(filteredItems);
-  };
   return (
     <Box w="100%">
       <Flex pt="120px" flexDir="column" w="100%">

@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Outlet } from "react-router-dom";
 
-const Home = () => {
+export const Home = () => {
   return (
     <Flex w="100vw" bgColor="wheat" flexDir="column">
       <Navbar />

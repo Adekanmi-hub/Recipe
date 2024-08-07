@@ -7,7 +7,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
-import EditModal from "./EditModal";
+import EditModal from "./EditModal.jsx";
 
 export const Dinner = () => {
   const [recipes, setRecipes] = useState([]);
